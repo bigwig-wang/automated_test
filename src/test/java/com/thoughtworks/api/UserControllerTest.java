@@ -58,4 +58,10 @@ public class UserControllerTest {
                 .andExpect(jsonPath("$[0].name", is(userRequest.getName())))
                 .andExpect(jsonPath("$[0].id", is(userRequest.getId())));
     }
+
+    @Test
+    public void sads() throws Exception {
+        mvc.perform(get("/api/user/1"))
+                .andExpect(status().isOk());
+    }
 }

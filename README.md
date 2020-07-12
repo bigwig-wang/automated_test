@@ -1,9 +1,43 @@
-####  自动化测试练习
+##### 技术栈
 
-##### 架构分解
-![avatar](./images/架构分解.jpg)
+- Java
 
-##### 测试策略
-```
-将传统的端到端的api测试拆解为 api test，service test 以及 db test
-```
+- SpringBoot
+
+- Mysql
+
+- Embedded H2
+
+- SpringBoot Test
+
+- Docker
+
+- BDD Mockito
+
+- Junit4
+
+- Flyway
+
+  
+
+##### 系统架构
+
+![api系统架构](images/api系统架构.png)
+
+##### 测试架构及工序
+
+![未命名文件](images/未命名文件.png)
+
+
+
+##### 系统ER图
+
+
+
+
+##### 领域模型
+
+
+
+
+
