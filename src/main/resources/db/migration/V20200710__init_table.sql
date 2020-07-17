@@ -23,8 +23,10 @@ create table examinee
 create table grade
 (
     id   VARCHAR(32) NOT NUll PRIMARY KEY,
+    examineeId VARCHAR(32) NOT NULL,
     examId VARCHAR(32) NOT NULL,
     score NUMERIC NOT NULL,
+    CONSTRAINT fk_grade_examineeId FOREIGN KEY(examineeId) REFERENCES examinee(id),
     CONSTRAINT fk_grade_examId FOREIGN KEY(examId) REFERENCES exam(id)
 );
 
